@@ -1,1 +1,3 @@
-Dies kein Satz. Dies ein Test! :-)
+# Homeserver
+
+My homeserver configuration, managed with Docker Compose and Caddy.
