@@ -1,0 +1,6 @@
+home.schwarzoldenburg.de {
+
+    root * /srv
+
+    file_server
+}
