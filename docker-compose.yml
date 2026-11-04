@@ -3,8 +3,8 @@ version: "3.8"
 services:
 
   caddy:
-    image: caddy:latest
     container_name: caddy
+    image: caddy:latest
 
     restart: unless-stopped
 
@@ -21,8 +21,8 @@ services:
       - caddy_net
 
   baikal:
-    image: anmutech/baikal:nginx
     container_name: baikal
+    image: anmutech/baikal:nginx
     restart: unless-stopped
     volumes:
       - ./baikal/config:/var/www/baikal/config
@@ -30,10 +30,10 @@ services:
     networks:
       - caddy_net
 
-networks:
-  caddy_net:
-    external: true
-
 volumes:
   caddy_data:
   caddy_config:
+
+networks:
+  caddy_net:
+    external: true
