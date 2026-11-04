@@ -4,3 +4,7 @@ home.schwarzoldenburg.de {
 
     file_server
 }
+
+cal.schwarzoldenburg.de {
+    reverse_proxy baikal:80
+}
